@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<link rel="stylesheet" href="styles.css">
+<h1 align=center>Registration form</h1>
+</head>
+<body>
+<FORM name="myForm" METHOD="POST" ACTION="#" >
+<TABLE align="center">
+  <TR>
+    <TD>Username</TD>
+    <TD>
+      <INPUT TYPE="TEXT" NAME="username" required>
+    </TD>
+  </TR>
+  
+    <TR>
+    <TD>Password</TD>
+    <TD>
+      <INPUT TYPE="password" NAME="password" required>
+    </TD>
+  </TR>
+  
+    <TR>
+    <TD>Re-enter Password</TD>
+    <TD>
+      <INPUT TYPE="password" NAME="password1" required>
+    </TD>
+  </TR>
+  
+    <TR>
+    <TD>DOB</TD>
+    <TD>
+      <INPUT TYPE="DATE" NAME="dob">
+    </TD>
+  </TR>
+  
+     <TR>
+    <TD>Gender</TD>
+    <TD>
+       <input type="radio" name="gender" value="male"> Male<br>
+  	<input type="radio" name="gender" value="female"> Female<br>
+    </TD>
+  </TR>
+  
+  <TR>
+    <TD>Country</TD>
+    <TD>  <select name="cars">
+    <option value="volvo">Volvo</option>
+    <option value="saab">Saab</option>
+    <option value="fiat">Fiat</option>
+    <option value="audi">Audi</option>
+  </select></TD>
+  </TR>
+    <TR>
+    <TD>Degree</TD>
+    <TD>   <input type="checkbox" name="vehicle" value="Bike"> I have a bike<br>
+  <input type="checkbox" name="vehicle" value="Car" checked> I have a car<br>
+    </TD>
+  </TR>
+      <TR>
+    <TD><P><INPUT TYPE="SUBMIT" VALUE="Submit" NAME="B1" onclick="CheckPassword(document.myForm.password)></P></TD>
+    <TD><P><INPUT TYPE="RESET" VALUE="Reset" NAME="B2"></P></TD>
+  </TR>
+  
+</TABLE>
+
+
+</FORM>
+<script src="validate.js"></script>
+</body>
+</html>
+
+
+
+
